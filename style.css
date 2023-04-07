@@ -153,7 +153,7 @@ nav ul li.btn:hover a{
 }
 .image img{
     height: 70%;
-    width: inherit;
+    width: 100%;
 }
 
 /* Extra small devices (phones, 600px and down) */
