@@ -24,7 +24,6 @@
           
           <nav class="nav">
               <ul>
-                  <li class="active"><a href="#games">Games</a></li>
                   <li><a href="#reviews">Reviews</a></li>
                   <li><a href="#faq">Faq</a></li>
                   <li><a href="#chat">Chat</a></li>
@@ -39,35 +38,75 @@
   <section class="hero" id="home">
       <div class="main-width">
           <div class="content">
-             <div class="main-text">
-                 <h6>#1 Trending</h6>
-                 <h3>Epic Games</h3>
-                 <h1>FORTNITE</h1>
-                 <p>Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions.</p>
-                 <a href="#">Play Now</a>  
-                 <a href="#" class="cta"><i class="fa-solid fa-play"></i>Watch Gameplay</a>  
+              <div class="main-text">
+                  <h6>#1 Trending</h6>
+                  <h3>Epic Games</h3>
+                  <h1>FORTNITE</h1>
+                  <p>Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions.</p>
+                  <button class="play-btn">Play Now</button>
+                  <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
               </div>
               <div class="image">
                   <!-- Responsive image with different source sizes -->
                   <picture>
-                    <source media="(max-width: 768px)" srcset="Fortnite-Transparent-Mobile.png">
-                    <source media="(min-width: 769px)" srcset="Fortnite-Transparent-Isolated-Background.png">
-                    <img src="Fortnite-Transparent-Isolated-Background.png" alt="Fortnite game illustration">
+                      <source media="(max-width: 768px)" srcset="Fortnite-Transparent-Mobile.png">
+                      <source media="(min-width: 769px)" srcset="Fortnite-Transparent-Isolated-Background.png">
+                      <img src="Fortnite-Transparent-Isolated-Background.png" alt="Fortnite game illustration">
                   </picture>
               </div>
           </div>
       </div>
   </section>
 
-  <!-- Games Section -->
-  <section id="games">
-      <div class="main-width">
-          <h2>Games</h2>
-          <p>Explore a variety of top-rated games including Fortnite, League of Legends, Valorant, and more.</p>
-          <!-- Add more games information here -->
+  <!-- Scrollable Games Section -->
+  <section class="scrollable-games" id="other-games">
+    <div class="main-width">
+      <h2>Other Popular Games</h2>
+      <div class="games-carousel">
+        <div class="game-item">
+          <img src="lol.jpeg" alt="League of Legends">
+          <h4>League of Legends</h4>
+          <p>Join millions of players in the global phenomenon that is League of Legends. Master champions and climb the ranks.</p>
+          <div class="rating">
+              ★★★★☆ 4.5
+          </div>
+          <button class="play-btn">Play Now</button>
+          <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
+        </div>
+        <div class="game-item">
+          <img src="valorent.png" alt="Valorant">
+          <h4>Valorant</h4>
+          <p>VALORANT is a tactical first-person shooter developed and published by Riot Games. Ready to aim?</p>
+          <div class="rating">
+              ★★★★★ 5.0
+          </div>
+          <button class="play-btn">Play Now</button>
+          <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>        
+        </div>
+        <div class="game-item">
+          <img src="apex.jpeg" alt="Apex Legends">
+          <h4>Apex Legends</h4>
+          <p>Apex Legends is a free-to-play battle royale-hero shooter. Pick your legend and survive the battlefield.</p>
+          <div class="rating">
+              ★★★★☆ 4.2
+          </div>
+          <button class="play-btn">Play Now</button>
+          <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
+        </div>
+        <div class="game-item">
+          <img src="mincraft.jpeg" alt="Minecraft">
+          <h4>Minecraft</h4>
+          <p>Minecraft is a sandbox video game that allows you to build and explore in a blocky, procedurally generated world.</p>
+          <div class="rating">
+              ★★★★☆ 4.6
+          </div>
+          <button class="play-btn">Play Now</button>
+          <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
+        </div>
+        <!-- Add more games as needed -->
       </div>
+    </div>
   </section>
-
   <!-- Reviews Section -->
   <section id="reviews">
       <div class="main-width">
