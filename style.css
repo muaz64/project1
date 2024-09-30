@@ -59,9 +59,9 @@ nav .nav-items li a {
 
 nav .nav-items li.btn a {
     padding: 10px 20px;
-    background-color: #ffb3b3;
+    background-color: #000000;
     border-radius: 6px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
@@ -101,7 +101,7 @@ nav .nav-items li.btn a {
 }
 
 .login-btn {
-    background-color: #007bff;
+    background-color: #74b0f0;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
@@ -110,7 +110,7 @@ nav .nav-items li.btn a {
 }
 
 .login-btn:hover {
-    background-color: #6e93b9;
+    background-color: #0749ff;
 }
 
 /* Media Queries */
@@ -194,11 +194,11 @@ nav .nav-items li.btn a {
 }
 
 .play-btn {
-    background-color: #007bff;
+    background-color: #00ff15;
 }
 
 .watch-btn {
-    background-color: #ff2f00;
+    background-color: #ff0000;
 }
 
 button:hover {
@@ -264,24 +264,113 @@ button:hover {
     color: #333;
 }
 
-/* Reviews Section */
+/* Styling for Reviews Section */
 #reviews {
-    padding: 60px 0;
-    background-color:linear-gradient(#cccfdd, 50%, #1466d1);
+    background-color: linear-gradient(#cccfdd, 50%, #1466d1);
+    padding: 40px 0;
     text-align: center;
 }
 
-/* FAQ Section */
-#faq {
-    padding: 60px 0;
-    background-color:linear-gradient(#cccfdd, 50%, #1466d1);
-    text-align: center;
+#reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
 }
+
+.review {
+    background-color: #070606;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fffdfd;
+}
+
+.review p strong {
+    font-weight: 600;
+    color: #ff4500; /* Highlight the rating */
+}
+
+/* Styling for FAQ Section */
+#faq {
+    background-color: linear-gradient(#cccfdd, 50%, #1466d1);
+    padding: 40px 0;
+}
+
+#faq h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #060607;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.faq-item h3::before {
+    content: '❓';
+    margin-right: 10px;
+    color: #ff4500; /* Highlight FAQ icon */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .review, .faq-item {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    #reviews h2, #faq h2 {
+        font-size: 2rem;
+    }
+
+    .review h3, .faq-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .review p, .faq-item p {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* Chat Section */
 #chat {
     padding: 60px 0;
-    background-color:linear-gradient(#cccfdd, 50%, #1466d1);
+    background-color: linear-gradient(#cccfdd, 50%, #1466d1);
 }
 
 .chat-container {
@@ -314,6 +403,70 @@ button:hover {
     border: none;
     cursor: pointer;
 }
+/* About Us Section */
+#about {
+    background: linear-gradient(#94a3e9, 50%, #1466d1);
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: #f0eaff;
+}
+
+.about-content {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-item:hover {
+    transform: scale(1.05);
+}
+
+.about-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffdd57;
+}
+
+.about-item p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #e0d7f7;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 
 /* Footer Section */
 .footer {
