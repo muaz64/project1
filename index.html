@@ -15,24 +15,34 @@
 </head>
 <body>
 
-  <!-- Navigation Section -->
-  <header>
-      <div class="main-width">
-          <div class="logo">
-             <h2><a href="#">GameOn</a></h2>    
-          </div>
-          
-          <nav class="nav">
-              <ul>
-                  <li><a href="#reviews">Reviews</a></li>
-                  <li><a href="#faq">Faq</a></li>
-                  <li><a href="#chat">Chat</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li class="btn"><a href="#">Download</a></li>
-              </ul>
-          </nav>
-      </div>
-  </header>
+ <!-- Navigation Section -->
+ <header>
+    <div class="main-width">
+        <div class="logo">
+           <h2><a href="#">GameOn</a></h2>    
+        </div>
+        
+        <nav class="nav">
+            <ul class="nav-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#other-games">Games</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="btn"><a href="#">Download</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." aria-label="Search">
+                    <button aria-label="Search button"><i class="fa fa-search"></i></button>
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </div>
+</header>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
@@ -43,13 +53,12 @@
                   <h3>Epic Games</h3>
                   <h1>FORTNITE</h1>
                   <p>Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions.</p>
-                  <button class="play-btn">Play Now</button>
-                  <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
+                  <button class="play-btn" aria-label="Play Fortnite">Play Now</button>
+                  <button class="watch-btn" aria-label="Watch Fortnite Gameplay"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
               </div>
               <div class="image">
-                  <!-- Responsive image with different source sizes -->
                   <picture>
-                      <source media="(max-width: 768px)" srcset="Fortnite-Transparent-Mobile.png">
+                      <source media="(max-width: 768px)" srcset="Fortnite-Transparent-Isolated-Background.png">
                       <source media="(min-width: 769px)" srcset="Fortnite-Transparent-Isolated-Background.png">
                       <img src="Fortnite-Transparent-Isolated-Background.png" alt="Fortnite game illustration">
                   </picture>
@@ -70,8 +79,8 @@
           <div class="rating">
               ★★★★☆ 4.5
           </div>
-          <button class="play-btn">Play Now</button>
-          <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
+          <button class="play-btn" aria-label="Play League of Legends">Play Now</button>
+          <button class="watch-btn" aria-label="Watch League of Legends Gameplay"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
         </div>
         <div class="game-item">
           <img src="valorent.png" alt="Valorant">
@@ -80,8 +89,8 @@
           <div class="rating">
               ★★★★★ 5.0
           </div>
-          <button class="play-btn">Play Now</button>
-          <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>        
+          <button class="play-btn" aria-label="Play Valorant">Play Now</button>
+          <button class="watch-btn" aria-label="Watch Valorant Gameplay"><i class="fa-solid fa-play"></i> Watch Gameplay</button>        
         </div>
         <div class="game-item">
           <img src="apex.jpeg" alt="Apex Legends">
@@ -90,8 +99,8 @@
           <div class="rating">
               ★★★★☆ 4.2
           </div>
-          <button class="play-btn">Play Now</button>
-          <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
+          <button class="play-btn" aria-label="Play Apex Legends">Play Now</button>
+          <button class="watch-btn" aria-label="Watch Apex Legends Gameplay"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
         </div>
         <div class="game-item">
           <img src="mincraft.jpeg" alt="Minecraft">
@@ -100,19 +109,18 @@
           <div class="rating">
               ★★★★☆ 4.6
           </div>
-          <button class="play-btn">Play Now</button>
-          <button class="watch-btn"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
+          <button class="play-btn" aria-label="Play Minecraft">Play Now</button>
+          <button class="watch-btn" aria-label="Watch Minecraft Gameplay"><i class="fa-solid fa-play"></i> Watch Gameplay</button>
         </div>
-        <!-- Add more games as needed -->
       </div>
     </div>
   </section>
+
   <!-- Reviews Section -->
   <section id="reviews">
       <div class="main-width">
           <h2>Reviews</h2>
           <p>Get in-depth reviews of the latest and greatest video games, including gameplay, graphics, and more.</p>
-          <!-- Add review content here -->
       </div>
   </section>
 
@@ -121,17 +129,22 @@
       <div class="main-width">
           <h2>Frequently Asked Questions</h2>
           <p>Have questions? Check out our FAQ section for quick answers to common queries about gaming.</p>
-          <!-- Add FAQ content here -->
       </div>
   </section>
 
   <!-- Chat Section -->
   <section id="chat">
-      <div class="main-width">
-          <h2>Join the Chat</h2>
-          <p>Connect with fellow gamers in our chat section. Share tips, tricks, and experiences!</p>
-          <!-- Add chat functionalities here -->
-      </div>
+    <div class="main-width">
+        <h2>Join the Chat</h2>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+            </div>
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
   </section>
 
   <!-- About Section -->
@@ -139,7 +152,6 @@
       <div class="main-width">
           <h2>About Us</h2>
           <p>GameOn is a community of passionate gamers who are always on the lookout for the latest games, reviews, and more.</p>
-          <!-- Add about us content here -->
       </div>
   </section>
 
@@ -166,18 +178,6 @@
 
   <!-- Back to Top Button -->
   <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
-
-  <script>
-      // Scroll-to-top functionality
-      const backToTopButton = document.querySelector('.back-to-top');
-      window.addEventListener('scroll', () => {
-          if (window.scrollY > 300) {
-              backToTopButton.style.display = 'block';
-          } else {
-              backToTopButton.style.display = 'none';
-          }
-      });
-  </script>
 
 </body>
 </html>
