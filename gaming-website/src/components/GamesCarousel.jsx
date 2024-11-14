@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const GamesCarousel = () => {
   return (
@@ -6,4 +6,4 @@ const GamesCarousel = () => {
   )
 }
 
-export default GamesCarousel
+export default GamesCarousel;
